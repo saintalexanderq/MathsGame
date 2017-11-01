@@ -1,13 +1,13 @@
 //
-//  AdditionQuestion.m
+//  QuestionFactory.h
 //  MATHS123
 //
 //  Created by Alex Quigley on 2017-11-01.
 //  Copyright © 2017 Alex Quigley. All rights reserved.
 //
 
-#import "AdditionQuestion.h"
+#import <Foundation/Foundation.h>
 
-@implementation AdditionQuestion
+@interface QuestionFactory : NSObject
 
 @end
