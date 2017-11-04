@@ -1,14 +1,14 @@
 //
-//  DivisionQuestion.m
+//  SubtractionQuestion.m
 //  MATHS123
 //
 //  Created by Alex Quigley on 2017-11-01.
 //  Copyright © 2017 Alex Quigley. All rights reserved.
 //
 
-#import "DivisionQuestion.h"
+#import "SubtractionQuestion.h"
 
-@implementation DivisionQuestion
+@implementation SubtractionQuestion
 
 - (instancetype)init
 {
@@ -20,10 +20,9 @@
 }
 
 -(void)generateQuestion {
-    self.question = [NSString stringWithFormat:@"What is %ld / %ld?", self.leftValue, self.rightValue];
-    self.answer = self.leftValue / self.rightValue;
+    self.question = [NSString stringWithFormat:@"What is %ld + %ld?", self.leftValue, self.rightValue];
+    self.answer = self.leftValue - self.rightValue;
 }
-
 
 
 @end

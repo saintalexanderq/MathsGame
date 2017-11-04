@@ -10,4 +10,17 @@
 
 @implementation QuestionFactory
 
+
+
+-(Question *)generateRandomQuestion {
+    NSArray *questionSubclassNames = @[@"AdditionQuestion", @"MultiplicationQuestion", @"DivisionQuestion", @"SubtractionQuestion"];
+    int indexRandom = arc4random_uniform(3);
+    NSString *randomQuestionType = questionSubclassNames [indexRandom];
+    Question *randomQuestion = [[NSClassFromString(randomQuestionType)alloc]init];
+    
+    return randomQuestion;
+    
+    
+}
+
 @end
